@@ -1,0 +1,5 @@
+npm install next-compose-plugins next-react-svg next-images
+
+npm i next-react-svg
+npm i next-images
+npm i next-compose-plugins

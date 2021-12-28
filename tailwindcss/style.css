@@ -10,5 +10,11 @@
 }
 
 body {
-  @apply bg-slGray-200;
+  @apply bg-slGray-200 font-serif;
+}
+
+h1,
+h2,
+h3 {
+  @apply font-sans;
 }

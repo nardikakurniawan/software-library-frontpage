@@ -3,3 +3,7 @@ npm install next-compose-plugins next-react-svg next-images
 npm i next-react-svg
 npm i next-images
 npm i next-compose-plugins
+
+npm i @headlessui/react
+npm i react-scroll
+npm i -E @material-tailwind/react

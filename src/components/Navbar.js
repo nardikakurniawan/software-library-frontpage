@@ -16,7 +16,7 @@ function Navbar() {
             <div className="flex items-center justify-between w-full">
               <div className="flex justify-center items-center flex-shrink-0 ">
                 <LogoBrand className=""></LogoBrand>
-                <span className="ml-4 text-2xl text-slIndigo-600 font-bold text-center leading-none mr-14">
+                <span className="ml-4 text-2xl text-slIndigo-600 font-bold text-center leading-none mr-14 font-sans">
                   Software <br /> Library
                 </span>
                 <div className="lg:flex items-center hidden ml-10">

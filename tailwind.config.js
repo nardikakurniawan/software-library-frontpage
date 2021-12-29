@@ -45,6 +45,7 @@ module.exports = {
       // Custom Colors
       slIndigo: {
         200: "#E1DFFF",
+        400: "#CAC7FF",
         600: "#6C63FF",
         800: "#392FD5",
       },
@@ -119,6 +120,8 @@ module.exports = {
       72: "18rem",
       80: "20rem",
       96: "24rem",
+      472: "472px",
+      640: "640px",
       800: "800px",
     },
     animation: {

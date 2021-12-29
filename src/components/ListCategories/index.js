@@ -47,59 +47,59 @@ export default function ListCategories() {
       <div className=" border-b-2 border-slGray-600 pb-6">
         <h3 className=" text-xl text-slIndigo-600 font-semibold ">Category</h3>
 
-        <div className="mt-6 flex justify-between shadow-md md:w-9/12 lg:w-2/5 py-6 px-6 bg-white rounded-xl">
+        <div className="mt-6 md:flex w-1/2 justify-between shadow-md md:w-9/12 lg:w-2/5 py-6 px-6 bg-white rounded-xl">
           <div class="form-check">
             <input
-              class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-slGray-200 checked:bg-slIndigo-600 checked:border-slIndigo-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+              class="form-check-input  h-4 w-4 border border-gray-300 rounded-sm bg-slGray-200 checked:bg-slIndigo-600 checked:border-slIndigo-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
               type="checkbox"
               value="website"
-              id="flexCheckDefault"
+              id="website"
             />
             <label
               class="form-check-label inline-block text-slGray-900 font-semibold"
-              for="flexCheckDefault"
+              for="website"
             >
               Website
             </label>
           </div>
           <div class="form-check">
             <input
-              class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-slGray-200 checked:bg-slIndigo-600 checked:border-slIndigo-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+              class="form-check-input h-4 w-4 border border-gray-300 rounded-sm bg-slGray-200 checked:bg-slIndigo-600 checked:border-slIndigo-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
               type="checkbox"
               value="android"
-              id="flexCheckDefault"
+              id="android"
             />
             <label
               class="form-check-label inline-block text-slGray-900 font-semibold"
-              for="flexCheckDefault"
+              for="android"
             >
               Android
             </label>
           </div>
           <div class="form-check">
             <input
-              class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-slGray-200 checked:bg-slIndigo-600 checked:border-slIndigo-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+              class="form-check-input h-4 w-4 border border-gray-300 rounded-sm bg-slGray-200 checked:bg-slIndigo-600 checked:border-slIndigo-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
               type="checkbox"
               value="Desktop"
-              id="flexCheckDefault"
+              id="desktop"
             />
             <label
               class="form-check-label inline-block text-slGray-900 font-semibold"
-              for="flexCheckDefault"
+              for="desktop"
             >
               Desktop
             </label>
           </div>
           <div class="form-check">
             <input
-              class="form-check-input appearance-none h-4 w-4 border border-gray-300 rounded-sm bg-slGray-200 checked:bg-slIndigo-600 checked:border-slIndigo-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
+              class="form-check-input h-4 w-4 border border-gray-300 rounded-sm bg-slGray-200 checked:bg-slIndigo-600 checked:border-slIndigo-600 focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
               type="checkbox"
               value="Arduino"
-              id="flexCheckDefault"
+              id="arduino"
             />
             <label
               class="form-check-label inline-block text-slGray-900 font-semibold"
-              for="flexCheckDefault"
+              for="arduino"
             >
               Arduino
             </label>
@@ -107,7 +107,7 @@ export default function ListCategories() {
         </div>
       </div>
 
-      <div class="grid grid-cols-4 gap-4 mt-10">
+      <div class="grid lg:grid-cols-4 md:grid-cols-2 gap-4 mt-10">
         {data?.length > 0 ? (
           data.map((item, index) => {
             return <RenderItem item={item} key={index}></RenderItem>;

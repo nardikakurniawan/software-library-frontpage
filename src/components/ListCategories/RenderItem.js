@@ -1,11 +1,13 @@
 import React from "react";
 
+import Link from "next/link";
+
 import formatThousand from "src/helpers/formatThousand";
 
 export default function RenderItem({ item }) {
   return (
-    <div>
-      <div className="rounded-t-md rounded-b-2xl overflow-hidden shadow-lg bg-white pb-3">
+    <>
+      <div className="rounded-t-md rounded-b-2xl overflow-hidden shadow-lg bg-white pb-3 relative">
         <div className=" h-64 rounded-md overflow-hidden p-1">
           <img
             src={item.imageName}
@@ -24,7 +26,11 @@ export default function RenderItem({ item }) {
           </div>
           <p className="text-lg text-slGray-800 capitalize">{item.category}</p>
         </div>
+
+        <Link href="project/details">
+          <a className="link-wrapped "></a>
+        </Link>
       </div>
-    </div>
+    </>
   );
 }

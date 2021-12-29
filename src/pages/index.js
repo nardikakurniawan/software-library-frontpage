@@ -2,6 +2,8 @@ import Head from "next/head";
 
 import Navbar from "src/components/Navbar";
 import Hero from "src/components/Hero";
+import ListCategories from "src/components/ListCategories";
+import Footer from "src/components/Footer";
 
 import * as FaIcons from "react-icons/fa";
 
@@ -14,7 +16,7 @@ export default function Home() {
         <link rel="icon" href="/images/logo-sl.png" />
       </Head>
 
-      <main className=" relative" style={{ height: 2000 }}>
+      <main className=" relative">
         <section className="Head">
           {/* fixed top-0 right-0 left-0 z-50 */}
           <div className="container mx-auto px-6 lg:px-0">
@@ -25,6 +27,16 @@ export default function Home() {
         </section>
 
         {/* <div className="elips "></div> */}
+
+        <section>
+          <div className="container mx-auto px-6 lg:px-0 mt-10">
+            <ListCategories></ListCategories>
+          </div>
+        </section>
+
+        <section>
+          <Footer></Footer>
+        </section>
       </main>
     </div>
   );

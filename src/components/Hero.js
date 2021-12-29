@@ -5,11 +5,11 @@ import * as FaIcons from "react-icons/fa";
 
 export default function Hero() {
   return (
-    <div className="  ">
-      <div class="lg:grid lg:grid-cols-2 lg:gap-4 py-10 lg:py-20 h-800 ">
+    <div className="">
+      <div class="lg:grid lg:grid-cols-2 lg:gap-4 py-10 lg:py-20 lg:h-800 transition-all duration-300">
         <div className="lg:relative flex justify-center order-2">
           <div className="lg:absolute lg:bottom-0 lg:right-0 md:w-9/12">
-            <img src="/images/img-hero-2x.png" alt="" />
+            <img src="/images/img-hero-gray.gif" alt="" />
           </div>
         </div>
 
